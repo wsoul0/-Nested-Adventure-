@@ -1,0 +1,36 @@
+food = input('You went to a restaurant and decided to order food but realize the chef poisoned some things\nYou get the choice between Pasta, Pizza, and Rice, what do you choose? ')
+
+
+if food.lower() == "pizza":
+   drink = input("The pizza was not poisoned but now you have to get a drink\nDo you choose Water, Coke, or Sprite? ")
+   if drink.lower() == "water":
+       print("The water was poisoned and you get sent to the hospital but die")
+   elif drink.lower() == "coke":
+       dessert = input("The coke was not poisoned but you want dessert now, do you choose Cheesecake, Oreos, or Cake? ")
+       if dessert.lower() == "cheesecake":
+           print("The cheesecake was good but you still die")
+       elif dessert.lower() == "oreos":
+           print("The oreos tasted trash and you still die")
+       elif dessert.lower() == "cake":
+           destination = input("The cake was good and not poisoned, you decide to leave, do you want to go Home or go to the Park? ")
+           if destination.lower() == "home":
+               print("You live a good life and rest")
+           elif destination.lower() == "park":
+               print("The park was too fun that you slipped and died horribly")
+           else:
+               print("You didnt choose and died by tripping on the sidewalk")
+       else:
+           print("You didnt choose and died from sadness")
+   elif drink.lower() == "sprite":
+       print("The sprite was poisoned and u die")
+   else:
+       print("You didnt choose and died from dehydration")
+elif food.lower() == "pasta":
+   print("The pasta was poisoned and you die")
+elif food.lower() == "rice":
+   print("The rice was poisoned and you also die")
+else:
+   print("You didnt choose to eat and die of starvation")
+
+
+
